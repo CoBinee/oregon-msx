@@ -1,0 +1,45 @@
+crt0.rel            :   crt0.s \
+                        main.inc
+main.rel            :   main.s main.inc \
+                        bios.inc System.inc
+System.rel          :   System.s System.inc \
+                        main.inc bios.inc vdp.inc
+Math.rel            :   Math.s Math.inc
+Sound.rel           :   Sound.s Sound.inc \
+                        bios.inc System.inc
+App.rel             :   App.s App.inc \
+                        bios.inc vdp.inc System.inc Game.inc
+Game.rel            :   Game.s Game.inc \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Value.inc Back.inc
+Value.rel           :   Value.s Value.inc \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc
+Back.rel            :   Back.s Back.inc \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc
+Instruction.rel     :   Instruction.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Initialize.rel      :   Initialize.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Date.rel            :   Date.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Begin.rel           :   Begin.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Fort.rel            :   Fort.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Hunt.rel            :   Hunt.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Eat.rel             :   Eat.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Rider.rel           :   Rider.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Event.rel           :   Event.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Mountain.rel        :   Mountain.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Illness.rel         :   Illness.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Final.rel           :   Final.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+Die.rel             :   Die.s \
+                        bios.inc vdp.inc System.inc Sound.inc Code.inc App.inc Game.inc Value.inc Back.inc
+
+pattern.rel         :   pattern.s
