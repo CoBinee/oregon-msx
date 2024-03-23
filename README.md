@@ -1,6 +1,6 @@
 # オレゴントレイル
 
-[![Witches](http://img.youtube.com/vi/EUzgFs3BqyQ/0.jpg)](https://www.youtube.com/watch?v=EUzgFs3BqyQ)
+[![オレゴントレイル](http://img.youtube.com/vi/EUzgFs3BqyQ/0.jpg)](https://www.youtube.com/watch?v=EUzgFs3BqyQ)
 
 ## 説明
 オレゴンを目指してください。<br>
